@@ -1,0 +1,74 @@
+<html>
+<body>
+
+<canvas id="myCanvas" width="1263" height="640" style="border:0px solid #d3d3d3;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(0,0, 1263,640);
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.font = "50px Verdana";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("<SPACE WAR>", 620,60);
+
+ctx.font = "30px Verdana";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("<-Instructions->", 620,200);
+
+ctx.font = "20px Verdana";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("1.Use ARROW keys to move the space ship.", 620,300);
+
+ctx.font = "20px Verdana";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("2.Press SPACE key to shoot.", 620,350);
+
+ctx.font = "20px Verdana";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("3.You will get only 3 Lives", 620,400);
+
+</script>
+
+
+<style>
+.button {
+  background-color: rgb(0, 195, 255);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    right: 47%;
+    
+}
+</style>
+
+<div class="vertical-center">
+
+<a href="main.html" class="button">Start</a>
+
+</div>
+
+
+
+
+</body>
+</html>
